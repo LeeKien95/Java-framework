@@ -20,8 +20,8 @@ public class UserBusinessImpl implements UserBusiness {
 	@Override
 	public UserInfo findByUserId(Integer user_id) {
 		try {
-//			return getUserDAO().findByUserId(user_id);
-			return null;
+			User u = getUserDAO().findByUserId(user_id);
+			return new UserInfo(u);
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw e;
@@ -31,8 +31,8 @@ public class UserBusinessImpl implements UserBusiness {
 	@Override
 	public UserInfo findByUsername(String username) {
 		try {
-//			return getUserDAO().findByUsername(username);
-			return null;
+			User u = getUserDAO().findByUsername(username);
+			return new UserInfo(u);
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw e;
