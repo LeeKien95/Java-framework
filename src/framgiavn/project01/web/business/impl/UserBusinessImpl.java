@@ -39,4 +39,16 @@ public class UserBusinessImpl implements UserBusiness {
 		}
 	}
 
+	@Override
+	public UserInfo addUser(UserInfo user) {
+		// TODO Auto-generated method stub
+		try {
+			getUserDAO().addUser(user.toUser());
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 }

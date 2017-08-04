@@ -7,4 +7,6 @@ public interface UserBusiness {
 	public UserInfo findByUserId(Integer user_id);
 
 	public UserInfo findByUsername(String username);
+	
+	public UserInfo addUser(UserInfo user);
 }

@@ -6,4 +6,7 @@ public interface UserDAO {
 	public User findByUserId(Integer user_id);
 
 	public User findByUsername(String username);
+	
+	public void addUser(User user);
+	
 }

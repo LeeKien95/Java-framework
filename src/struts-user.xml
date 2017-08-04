@@ -19,5 +19,9 @@
 			<result name="success">User.Info</result>
 			<result name="error">User.Info</result>
 		</action>
+		
+		<action name="addUser" class="springUserAction" method="addUser">
+			<result name="success">User.Add</result>
+		</action>
 	</package>
 </struts>

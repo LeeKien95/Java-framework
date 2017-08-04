@@ -67,4 +67,15 @@ public class UserInfo {
 		setUser_id(u.getUser_id());
 		setUsername(u.getUsername());
 	}
+	
+	public User toUser() {
+		User u = new User();
+		u.setAvatar(getAvatar());
+		u.setEmail(getEmail());
+		u.setIsAdmin(getIsAdmin());
+		u.setPassword(getPassword());
+		u.setUser_id(getUser_id());
+		u.setUsername(getUsername());
+		return u;
+	}
 }
